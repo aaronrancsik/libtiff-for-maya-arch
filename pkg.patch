@@ -18,7 +18,7 @@
 -        'SKIP')
 -validpgpkeys=('EBDFDB21B020EE8FD151A88DE301047DE1198975'  # Bob Friesenhahn <bfriesen@simple.dallas.tx.us>
 -	      'B1FA7D81EEB8E66399178B9733EBBFC47B3DD87D') # Even Rouault <even.rouault@spatialys.com>
-+source=(https://download.osgeo.org/libtiff/tiff-${pkgver}.tar)
++source=(https://download.osgeo.org/libtiff/tiff-${pkgver}.tar.gz)
 +sha256sums=('0e46e5acb087ce7d1ac53cf4f56a09b221537fc86dfc5daaad1c2e89e1b37ac8')
 +b2sums=('433a087249541f6142dd25b6dc807018639908175b0d73b4af3aa301af2dee3d76184e4689e7b2f1f9b73567ac78d50456ee94fffe00bad6da05375cf2d94d92')
  
