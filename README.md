@@ -9,6 +9,8 @@
 #### B. SSH 
 `git clone git@github.com:aaronrancsik/libtiff-for-maya-arch.git`
 ### 2. Download the official Arch PKGBUILD 
+`cd /tmp/libtiff-for-maya-arch`
+
 `curl -O https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/libtiff/trunk/PKGBUILD`
 ### 3. Patch the PKGBUILD 
 
@@ -30,4 +32,7 @@
 ### 4. Create & install the actual package.
 `makepkg -s`
 
+`sudo pacman -U libtiff-4.3.0-1-x86_64.pkg.tar.zst`
+
+### 5. It's done.
 
