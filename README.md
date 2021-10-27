@@ -9,7 +9,7 @@
 #### B. SSH 
 `git clone git@github.com:aaronrancsik/libtiff-for-maya-arch.git`
 ### 2. Download the official Arch PKGBUILD 
-`curl -o https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/libtiff/trunk/PKGBUILD`
+`curl -O https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/libtiff/trunk/PKGBUILD`
 ### 3. Patch the PKGBILD 
 
 `cp PKGBILD PKGBILD.orig`
