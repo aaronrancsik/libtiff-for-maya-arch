@@ -1,0 +1,31 @@
+--- PKGBUILD.old	2021-10-27 07:56:00.618498826 +0200
++++ PKGBUILD	2021-10-27 07:58:06.678928992 +0200
+@@ -1,6 +1,3 @@
+-# Maintainer: Levente Polyak <anthraxx[at]archlinux[dot]org>
+-# Contributor: Eric Bélanger <eric@archlinux.org>
+-
+ pkgname=libtiff
+ pkgver=4.3.0
+ pkgrel=1
+@@ -12,17 +9,14 @@
+ makedepends=('freeglut' 'glu' 'mesa' 'jbigkit')
+ optdepends=('freeglut: for using tiffgt')
+ provides=('libtiff.so' 'libtiffxx.so')
+-source=(https://download.osgeo.org/libtiff/tiff-${pkgver}.tar.gz{,.sig})
+-sha256sums=('0e46e5acb087ce7d1ac53cf4f56a09b221537fc86dfc5daaad1c2e89e1b37ac8'
+-            'SKIP')
+-b2sums=('433a087249541f6142dd25b6dc807018639908175b0d73b4af3aa301af2dee3d76184e4689e7b2f1f9b73567ac78d50456ee94fffe00bad6da05375cf2d94d92'
+-        'SKIP')
+-validpgpkeys=('EBDFDB21B020EE8FD151A88DE301047DE1198975'  # Bob Friesenhahn <bfriesen@simple.dallas.tx.us>
+-	      'B1FA7D81EEB8E66399178B9733EBBFC47B3DD87D') # Even Rouault <even.rouault@spatialys.com>
++source=(https://download.osgeo.org/libtiff/tiff-${pkgver}.tar)
++sha256sums=('0e46e5acb087ce7d1ac53cf4f56a09b221537fc86dfc5daaad1c2e89e1b37ac8')
++b2sums=('433a087249541f6142dd25b6dc807018639908175b0d73b4af3aa301af2dee3d76184e4689e7b2f1f9b73567ac78d50456ee94fffe00bad6da05375cf2d94d92')
+ 
+ build() {
+   cd tiff-${pkgver}
+   ./configure \
++    --enable-ld-version-script \
+     --prefix=/usr \
+ 	  --sysconfdir=/etc \
+ 	  --mandir=/usr/share/man \
