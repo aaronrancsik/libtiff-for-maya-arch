@@ -21,7 +21,7 @@
 `vim pkg.patch`
 
 #### Patch
-*May need to install [patch](https://archlinux.org/packages/core/x86_64/patch/) package*
+*You may need to install the [patch](https://archlinux.org/packages/core/x86_64/patch/) package*
 
 `patch PKGBUILD pkg.patch`
 
